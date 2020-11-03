@@ -1,0 +1,44 @@
+import { ProductConsumer } from "../context";
+import { Link } from "react-router-dom";
+import { ButtonContainer } from "./styles/ButtonContainer";
+import { ModalContainer } from "./styles/ModalContainer"; 
+
+export default function Modal() {
+    return (
+        <ProductConsumer>
+            { (value) => {
+                const {modalOpen, closeModal} = value;
+                const {img, title, price} = value.modalProduct;
+                
+                if(!modalOpen){
+                    return null;
+                } else {
+                    return (
+                        <ModalContainer>
+                            <div className="container">
+                                <div className="row">
+                                    <div id="modal" className="col-8 mx-auto col-md-6 col-lg-4 text-center text-capitalize">
+                                        <h5>PRODUCT ADDED TO CART</h5>
+                                        <img src={img} alt="product" className="img-fluid"/>
+                                        <h5>{title}</h5>
+                                        <h5 className="text-muted">Price: <span>R$</span>{price}</h5>
+                                        <Link to="/" >
+                                            <ButtonContainer onClick={()=> {closeModal()}}>
+                                                Continue shopping
+                                            </ButtonContainer>
+                                        </Link>
+                                        <Link to="/cart" >
+                                            <ButtonContainer cart onClick={()=> {closeModal()}}>
+                                                Go to cart
+                                            </ButtonContainer>
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
+                        </ModalContainer>
+                    );
+                }
+            }}
+        </ProductConsumer>
+    )
+}
