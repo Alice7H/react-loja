@@ -15,7 +15,7 @@ export default function CarouselComponent() {
                 <Carousel prevIcon={prevIcon} nextIcon={nextIcon}>
                     <Carousel.Item interval={3000}>
                         <img
-                            className="d-block my-5 mx-auto"
+                            className="d-block my-5 mx-auto rounded mb-0"
                             src="/images/herrreiprich.jpg"
                             alt="First slide"
                         />
@@ -23,12 +23,12 @@ export default function CarouselComponent() {
                             <span>
                                 Photo by{" "}
                                 <a href="https://unsplash.com/@herrreiprich?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
-                                target="_blank" rel="noreferrer">
+                                target="_blank" rel="noopener noreferrer">
                                     herrreiprich
                                 </a>{" "}
                                 on{" "}
                                 <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
-                                target="_blank" rel="noreferrer">
+                                target="_blank" rel="noopener noreferrer">
                                     Unsplash
                                 </a>
                             </span>
@@ -37,7 +37,7 @@ export default function CarouselComponent() {
 
                     <Carousel.Item interval={3000}>
                         <img
-                            className="d-block my-5 mx-auto"
+                            className="d-block my-5 mx-auto rounded mb-0"
                             src="/images/piotr-cichosz.jpg"
                             alt="Second slide"
                         />
@@ -45,12 +45,12 @@ export default function CarouselComponent() {
                             <span>
                                 Photo by{" "}
                                 <a href="https://unsplash.com/@ptrc?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" 
-                                target="_blank" rel="noreferrer">
+                                target="_blank" rel="noopener noreferrer">
                                     Piotr Cichosz
                                 </a>{" "}
                                 on{" "}
                                 <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" 
-                                target="_blank" rel="noreferrer">
+                                target="_blank" rel="noopener noreferrer">
                                     Unsplash
                                 </a>
                             </span>
@@ -59,7 +59,7 @@ export default function CarouselComponent() {
 
                     <Carousel.Item interval={3000}>
                         <img
-                            className="d-block my-5 mx-auto"
+                            className="d-block my-5 mx-auto rounded mb-0"
                             src="images/timothy-meinberg.jpg"
                             alt="Third slide"
                         />
@@ -67,12 +67,12 @@ export default function CarouselComponent() {
                             <span>
                                 Photo by{" "}
                                 <a href="https://unsplash.com/@timothymeinberg?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" 
-                                target="_blank" rel="noreferrer">
+                                target="_blank" rel="noopener noreferrer">
                                     Timothy Meinberg
                                 </a>{" "}
                                 on{" "}
                                 <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" 
-                                target="_blank" rel="noreferrer">
+                                target="_blank" rel="noopener noreferrer">
                                     Unsplash
                                 </a>
                             </span>

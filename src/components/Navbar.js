@@ -1,4 +1,4 @@
-import logo from "../logo_test.png";
+import logo from "../assets/images/logo_test.png";
 import { Link } from "react-router-dom";
 import { ButtonContainer } from "./styles/ButtonContainer";
 import { NavWrapper } from "./styles/NavContainer";
@@ -7,10 +7,10 @@ export default function Navbar() {
     return (
         <NavWrapper className="navbar navbar-expand sm navbar-dark px-sm-5">
             <Link to="/">
-                <img src={logo} alt="loja" className="navbar-brand"width="90px" height="90px"/>
+                <img src={logo} alt="loja" className="navbar-brand"/>
             </Link>
             <ul className="navbar-nav align-items-center">
-                <li className="nav-item ml-5">
+                <li className="nav-item ml-lg-5 ml-md-3 ml-sm-3">
                     <Link to="/" className="nav-link">
                         <strong>Products</strong>
                     </Link>

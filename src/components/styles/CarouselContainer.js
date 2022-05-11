@@ -29,4 +29,9 @@ export const CarouselContainer = styled.div `
   .carousel-item img {
     width: 40rem;
   }
+  @media screen and (max-width: 425px){
+    .carousel-item img {
+      width: 20rem;
+    }
+  }
 `
